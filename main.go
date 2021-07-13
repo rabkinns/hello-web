@@ -28,7 +28,7 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Received request from %s at %s", r.RemoteAddr, r.URL.EscapedPath())
-		fmt.Fprint(w, "Hello World!")
+		fmt.Fprint(w, "Hello World - Wellsky!")
 	})
 	http.HandleFunc("/healthz", func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Received health check from %s", r.RemoteAddr)
